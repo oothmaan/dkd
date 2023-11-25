@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./script.js"></script>
+
+    <title>document</title>
+</head>
+<body>
+    <p id="id"></p>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+<script>
+const animal
+=new Map([
+["cat",50],
+["dog",30],
+["ant",20],
+["duck",20],
+]
+)
+animal.set("elephant",100);
+animal.set("horse",190);
+document.getElementById("id").innerHTML=animal.size
+document.write(animal.get("cat"))
+
+let text ="";
+animal.forEach(function(value,key){
+    text+=key+"="+value+"<br>"
+})
+document.write(text);
+function sum(a,b){
+    return a+b;
+}
+window.alert("this output is: "+sum(7,9));
+
+
+
+
+</script>
+
+</html>
